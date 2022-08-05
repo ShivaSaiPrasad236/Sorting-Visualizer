@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title> Sorting Visualizer!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<heading>
+	<h1 align="center"> Sorting Visualizer </h1>
+</heading>
+<nav class="row">
+	<div class="col gap-2 d-sm-flex">
+		<button value="New array" class="btn btn-outline-success newArray">Randomize Array </button><br>
+    <span id="input">
+        <span id="speed" > <label>speed</label> 
+        <input type="range" min="1" max="550" value="150"
+        step="10" id="speedInput">
+        </span><br>
+        <span id=" size "><label>size</label> 
+        <input type="range" min="4" max="80" step="2" value="15" id="arraySize" >
+        </span>
+      </span>
+  </div>
+      
+      <div class="col gap-2 d-sm-flex justify-content-left">
+        <button value="bubble" class="btn btn-primary bubbleSort button" > BubbleSort</button>
+        <button value="selection" class="btn btn-primary selectionSort button">SelectionSort</button>
+        <button value="insertion" class="btn btn-primary insertionSort button" > InsertionSort</button>
+        <button value="merge" class="btn  btn-primary mergeSort button"> MergeSort</button>
+        <button value="quick" class="btn btn-primary quickSort button"> QuickSort </button>
+      </div>
+    </nav> 
+   <body  class="p-3 mb-2 bg-dark">
+
+      <div id="bars" class="container"> </div>
+      <!-- <div class="description bub"> This is description of bubble sort </div> -->
+
+  </body>
+  <script src="js_files/script.js" ></script>
+  <script src="js_files/bubbleSort.js" ></script>
+  <script src="js_files/selectionSort.js" ></script>
+  <script src="js_files/insertionSort.js"></script>
+  <script src="js_files/mergeSort.js"></script>
+  <script src="js_files/quickSort.js"></script>
+
+</html>
