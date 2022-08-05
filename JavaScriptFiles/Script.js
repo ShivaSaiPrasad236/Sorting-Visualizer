@@ -80,6 +80,7 @@ function createNewArray(noOfBars){
     array[i] = Math.floor(Math.random()*200)+10;
   }
   console.log(array);
+  
   for(let i = 0; i<noOfBars; i++){
     var bar = document.createElement("div");
     bar.classList.add("bar");
